@@ -35,11 +35,11 @@
                     <legend>Dados pessoais</legend>
                     <div>
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome">
+                        <input type="text" name="nome" id="nome" required autofocus>
                     </div>
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div>
                         <label for="telefone">Telefone</label>
@@ -50,8 +50,12 @@
                         <input type="text" name="endereco" id="endereco">
                     </div>
                     <div>
+                        <label for="numero">Número</label>
+                        <input type="number" name="numero" id="numero" min="2" max="5">
+                    </div>
+                    <div>
                         <label for="data_nascimento">Data de nascimento</label>
-                        <input type="date" forma name="data_nascimento" id="data_nascimento">
+                        <input type="date" forma name="data_nascimento" id="data_nascimento" required>
                     </div>
                     <div>
                         <label for="data_entrevista">Data da entrevista</label>
@@ -63,7 +67,7 @@
                     </div>
                     <div>
                         <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha">
+                        <input type="password" name="senha" id="senha" minlength="8" maxlength="16">
                     </div>
                     <div>
                         <label for="conf_senha">Confirme a senha</label>
@@ -77,13 +81,23 @@
                         <label for="curriculo">Currículo</label>
                         <input type="file" name="curriculo" id="curriculo">
                     </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <div>
+                        <label for="cartao">Cartão de crédito</label>
+                        <input type="text" name="cartao" id="cartao" autocomplete="off">
+                    </div>
+                    <div>
+                        <label for="cupom">Cupom de desconto</label>
+                        <input type="text" name="cupom" id="cupom" autocomplete="off">
+                    </div>
                     <input type="hidden" name="questionario" value="adicionar">
                 </fieldset>
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
-
 </body>
 
 </html>
